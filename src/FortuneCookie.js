@@ -65,9 +65,8 @@ function FortuneCookie() {
     const [fortune, setFortune] = useState("");
     const [broken, setBroken] = useState(false);
 
-    const generateFortune = (event) => {
+    const generateFortune = () => {
         if (!broken) {
-            event.preventDefault();
             const randomIndex = Math.floor(Math.random() * fortunes.length);
             setFortune(fortunes[randomIndex]);
         }
@@ -79,6 +78,7 @@ function FortuneCookie() {
     };
 
     useEffect(() => {
+        generateFortune();
         const handleTap = () => {
             generateFortune();
             setBroken(true);
@@ -114,7 +114,7 @@ function FortuneCookie() {
             <br />
             <br />
             <br />
-
+            <button onClick={generateFortune}>Generate Fortune</button>
             <button onClick={reloadFortune}>Reload</button>
         </div>
     );

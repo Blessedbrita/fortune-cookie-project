@@ -1,6 +1,5 @@
 import './App.css';
 import FortuneCookie from './FortuneCookie';
-import Shake from 'shake.js';
 
 function App() {
   return (
