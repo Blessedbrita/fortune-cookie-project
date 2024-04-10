@@ -1,38 +1,41 @@
-.App {
+body {
+  background-color: rgb(37, 29, 48);
   text-align: center;
+  color: aqua;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.instruction {
+  font-size: 25px;
+  margin-top: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fortune {
+  color: snow;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cookie {
+  cursor: pointer;
+  width: 300px;
+  height: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 7px;
+  background-color: orangered;
+  color: black;
+  border-color: orangered;
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  margin-top: 90px;
+  color: gray;
+  opacity: 0.7;
 }
