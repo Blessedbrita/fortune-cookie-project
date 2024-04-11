@@ -103,7 +103,7 @@ function FortuneCookie() {
             document.removeEventListener('click', handleTap);
             window.removeEventListener('shake', handleShake);
         };
-    }, []);
+    }, [generateFortune]);
 
     return (
         <div>
