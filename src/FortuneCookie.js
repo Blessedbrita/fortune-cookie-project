@@ -102,8 +102,9 @@ function FortuneCookie() {
         return () => {
             document.removeEventListener('click', handleTap);
             window.removeEventListener('shake', handleShake);
+            shakeEvent.stop();
         };
-    }, [generateFortune]);
+    }, []);
 
     return (
         <div>
