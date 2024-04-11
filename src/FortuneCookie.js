@@ -60,6 +60,11 @@ function FortuneCookie() {
         "An enemy may have simply been misjudged.",
         "A smile can bring a change is destiny today.",
         "Change your horizons if you want to change your luck.",
+        "To truly find yourself, you should play hide and seek alone.",
+        "Come back later... I am sleeping. (yes, cookies need sleep too)",
+        "If you think nobody cares if you are alive, try missing a couple car payments",
+        "You look pretty",
+        "I see money in your future... It is not yours though."
     ];
 
     const [fortune, setFortune] = useState("");
@@ -114,7 +119,6 @@ function FortuneCookie() {
             <br />
             <br />
             <br />
-            <button onClick={generateFortune}>Generate Fortune</button>
             <button onClick={reloadFortune}>Reload</button>
         </div>
     );
